@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src https://raw.githubusercontent.com; base-uri 'none'; form-action 'none'"
+    />
+    <meta name="referrer" content="no-referrer" />
+    <title>Venndann status</title>
+    <meta
+      name="description"
+      content="Whether the Inferra api, the website, the documentation and the console are answering, checked from outside every five minutes."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="page.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <a class="brand" href="https://venndann.com/">venndann</a>
+        <h1>Status</h1>
+        <p id="summary" class="summary">Reading the latest checks…</p>
+        <p id="checked" class="quiet"></p>
+      </header>
+      <ol id="services" class="services"></ol>
+      <footer class="quiet">
+        Checked from GitHub, outside our own servers, every five minutes; a
+        check can start a few minutes late. Each bar is one day, the newest on
+        the right. Signals sent to your trading system are not on this page:
+        your own delivery records show those.
+      </footer>
+    </main>
+  </body>
+</html>
