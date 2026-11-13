@@ -5,6 +5,7 @@ const TARGETS = [
   { id: "website", url: "https://venndann.com/" },
   { id: "docs", url: "https://venndann.com/docs/" },
   { id: "console", url: "https://venndann.com/console/" },
+  { id: "app", url: "https://venndann.com/app/api/health", json: true },
 ];
 
 const TIMEOUT_MS = 10_000;

@@ -5,6 +5,7 @@ const SERVICES = [
   { id: "website", name: "Website" },
   { id: "docs", name: "Documentation" },
   { id: "console", name: "Platform console" },
+  { id: "app", name: "Venndann app" },
 ];
 
 const DAYS = 90;
