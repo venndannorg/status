@@ -1,15 +1,5 @@
 const RECORD = "https://raw.githubusercontent.com/venndannorg/status/data/status.json";
 
-const SERVICES = [
-  { id: "api", name: "Inferra API" },
-  { id: "website", name: "Website" },
-  { id: "docs", name: "Documentation" },
-  { id: "console", name: "Platform console" },
-  { id: "app", name: "Venndann app" },
-];
-
-const DAYS = 90;
-
 const STATE_TEXT = { up: "Working", slow: "Slow", down: "Not answering" };
 
 function text(tag, content, className) {
@@ -19,15 +9,21 @@ function text(tag, content, className) {
   return node;
 }
 
-function lastDays() {
+function lastDays(count) {
   const days = [];
   const today = new Date();
-  for (let back = DAYS - 1; back >= 0; back -= 1) {
+  for (let back = count - 1; back >= 0; back -= 1) {
     const day = new Date(today);
     day.setUTCDate(today.getUTCDate() - back);
     days.push(day.toISOString().slice(0, 10));
   }
   return days;
+}
+
+function shareClass(share) {
+  if (share === 0) return "day good";
+  if (share < 0.05) return "day some";
+  return "day bad";
 }
 
 function bar(date, day) {
@@ -38,7 +34,7 @@ function bar(date, day) {
     return cell;
   }
   const share = day.failed / day.checks;
-  cell.className = share === 0 ? "day good" : share < 0.05 ? "day some" : "day bad";
+  cell.className = shareClass(share);
   cell.title = `${date}: ${day.checks - day.failed} of ${day.checks} checks answered`;
   return cell;
 }
@@ -50,15 +46,16 @@ function uptime(record, id) {
     checks += day[id]?.checks ?? 0;
     failed += day[id]?.failed ?? 0;
   }
-  return checks === 0 ? "" : `${(((checks - failed) / checks) * 100).toFixed(2)}% over 90 days`;
+  return checks === 0 ? "" : `${(((checks - failed) / checks) * 100).toFixed(2)}% over ${record.keepDays} days`;
 }
 
 function render(record) {
   const list = document.getElementById("services");
-  const days = lastDays();
-  const states = SERVICES.map((service) => record.current[service.id]?.state ?? "down");
+  const services = record.services ?? [];
+  const days = lastDays(record.keepDays ?? 0);
+  const states = services.map((service) => record.current[service.id]?.state ?? "down");
   list.replaceChildren(
-    ...SERVICES.map((service, index) => {
+    ...services.map((service, index) => {
       const item = document.createElement("li");
       const head = document.createElement("div");
       head.className = "head";
@@ -77,7 +74,7 @@ function render(record) {
   const down = states.filter((state) => state === "down").length;
   const summary = document.getElementById("summary");
   summary.textContent =
-    down === 0 ? "Everything is working." : `${down} of ${SERVICES.length} services are not answering.`;
+    down === 0 ? "Everything is working." : `${down} of ${services.length} services are not answering.`;
   summary.className = down === 0 ? "summary good" : "summary bad";
   document.getElementById("checked").textContent =
     `Last checked ${new Date(record.checkedAt).toLocaleString()}.`;

@@ -1,11 +1,9 @@
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 
 const TARGETS = [
-  { id: "api", url: "https://venndann.com/v1/health", json: true },
-  { id: "website", url: "https://venndann.com/" },
-  { id: "docs", url: "https://venndann.com/docs/" },
-  { id: "console", url: "https://venndann.com/console/" },
-  { id: "app", url: "https://venndann.com/app/api/health", json: true },
+  { id: "api", name: "Inferra API", url: "https://venndann.com/v1/health", json: true },
+  { id: "website", name: "Website, documentation and console", url: "https://venndann.com/" },
+  { id: "app", name: "Venndann app", url: "https://venndann.com/app/api/health", json: true },
 ];
 
 const TIMEOUT_MS = 10_000;
@@ -58,6 +56,11 @@ const today = now.toISOString().slice(0, 10);
 const results = await Promise.all(TARGETS.map(probe));
 
 status.checkedAt = now.toISOString();
+status.keepDays = KEEP_DAYS;
+status.services = TARGETS.map(({ id, name }) => ({ id, name }));
+status.current = Object.fromEntries(
+  Object.entries(status.current).filter(([id]) => TARGETS.some((target) => target.id === id)),
+);
 status.days[today] ??= {};
 TARGETS.forEach((target, index) => {
   const result = results[index];
