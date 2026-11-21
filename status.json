@@ -1,0 +1,213 @@
+{
+  "checkedAt": "2026-11-21T17:25:18.098Z",
+  "current": {
+    "api": {
+      "state": "up",
+      "ms": 423,
+      "detail": "",
+      "at": "2026-11-21T17:25:18.098Z"
+    },
+    "website": {
+      "state": "up",
+      "ms": 421,
+      "detail": "",
+      "at": "2026-11-21T17:25:18.098Z"
+    },
+    "app": {
+      "state": "up",
+      "ms": 410,
+      "detail": "",
+      "at": "2026-11-21T17:25:18.098Z"
+    }
+  },
+  "days": {
+    "2026-11-13": {
+      "api": {
+        "checks": 3,
+        "failed": 0,
+        "slowestMs": 486
+      },
+      "website": {
+        "checks": 3,
+        "failed": 0,
+        "slowestMs": 323
+      },
+      "docs": {
+        "checks": 3,
+        "failed": 0,
+        "slowestMs": 317
+      },
+      "console": {
+        "checks": 3,
+        "failed": 0,
+        "slowestMs": 314
+      },
+      "app": {
+        "checks": 2,
+        "failed": 0,
+        "slowestMs": 209
+      }
+    },
+    "2026-11-14": {
+      "api": {
+        "checks": 36,
+        "failed": 0,
+        "slowestMs": 1181
+      },
+      "website": {
+        "checks": 36,
+        "failed": 0,
+        "slowestMs": 1382
+      },
+      "docs": {
+        "checks": 16,
+        "failed": 0,
+        "slowestMs": 690
+      },
+      "console": {
+        "checks": 16,
+        "failed": 0,
+        "slowestMs": 1352
+      },
+      "app": {
+        "checks": 36,
+        "failed": 0,
+        "slowestMs": 723
+      }
+    },
+    "2026-11-15": {
+      "api": {
+        "checks": 34,
+        "failed": 0,
+        "slowestMs": 656
+      },
+      "website": {
+        "checks": 34,
+        "failed": 0,
+        "slowestMs": 778
+      },
+      "app": {
+        "checks": 34,
+        "failed": 0,
+        "slowestMs": 629
+      }
+    },
+    "2026-11-16": {
+      "api": {
+        "checks": 19,
+        "failed": 0,
+        "slowestMs": 596
+      },
+      "website": {
+        "checks": 19,
+        "failed": 0,
+        "slowestMs": 740
+      },
+      "app": {
+        "checks": 19,
+        "failed": 0,
+        "slowestMs": 604
+      }
+    },
+    "2026-11-17": {
+      "api": {
+        "checks": 27,
+        "failed": 0,
+        "slowestMs": 567
+      },
+      "website": {
+        "checks": 27,
+        "failed": 0,
+        "slowestMs": 751
+      },
+      "app": {
+        "checks": 27,
+        "failed": 0,
+        "slowestMs": 590
+      }
+    },
+    "2026-11-18": {
+      "api": {
+        "checks": 26,
+        "failed": 0,
+        "slowestMs": 562
+      },
+      "website": {
+        "checks": 26,
+        "failed": 0,
+        "slowestMs": 695
+      },
+      "app": {
+        "checks": 26,
+        "failed": 0,
+        "slowestMs": 599
+      }
+    },
+    "2026-11-19": {
+      "api": {
+        "checks": 26,
+        "failed": 0,
+        "slowestMs": 570
+      },
+      "website": {
+        "checks": 26,
+        "failed": 0,
+        "slowestMs": 731
+      },
+      "app": {
+        "checks": 26,
+        "failed": 0,
+        "slowestMs": 571
+      }
+    },
+    "2026-11-20": {
+      "api": {
+        "checks": 26,
+        "failed": 0,
+        "slowestMs": 561
+      },
+      "website": {
+        "checks": 26,
+        "failed": 0,
+        "slowestMs": 1362
+      },
+      "app": {
+        "checks": 26,
+        "failed": 0,
+        "slowestMs": 559
+      }
+    },
+    "2026-11-21": {
+      "api": {
+        "checks": 22,
+        "failed": 0,
+        "slowestMs": 512
+      },
+      "website": {
+        "checks": 22,
+        "failed": 0,
+        "slowestMs": 647
+      },
+      "app": {
+        "checks": 22,
+        "failed": 0,
+        "slowestMs": 498
+      }
+    }
+  },
+  "keepDays": 90,
+  "services": [
+    {
+      "id": "api",
+      "name": "Inferra API"
+    },
+    {
+      "id": "website",
+      "name": "Website, documentation and console"
+    },
+    {
+      "id": "app",
+      "name": "Venndann app"
+    }
+  ]
+}
