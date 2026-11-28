@@ -1,0 +1,332 @@
+{
+  "checkedAt": "2026-11-28T19:33:21.485Z",
+  "current": {
+    "api": {
+      "state": "up",
+      "ms": 630,
+      "detail": "",
+      "at": "2026-11-28T19:33:21.485Z"
+    },
+    "website": {
+      "state": "up",
+      "ms": 464,
+      "detail": "",
+      "at": "2026-11-28T19:33:21.485Z"
+    },
+    "app": {
+      "state": "up",
+      "ms": 544,
+      "detail": "",
+      "at": "2026-11-28T19:33:21.485Z"
+    }
+  },
+  "days": {
+    "2026-11-13": {
+      "api": {
+        "checks": 3,
+        "failed": 0,
+        "slowestMs": 486
+      },
+      "website": {
+        "checks": 3,
+        "failed": 0,
+        "slowestMs": 323
+      },
+      "docs": {
+        "checks": 3,
+        "failed": 0,
+        "slowestMs": 317
+      },
+      "console": {
+        "checks": 3,
+        "failed": 0,
+        "slowestMs": 314
+      },
+      "app": {
+        "checks": 2,
+        "failed": 0,
+        "slowestMs": 209
+      }
+    },
+    "2026-11-14": {
+      "api": {
+        "checks": 36,
+        "failed": 0,
+        "slowestMs": 1181
+      },
+      "website": {
+        "checks": 36,
+        "failed": 0,
+        "slowestMs": 1382
+      },
+      "docs": {
+        "checks": 16,
+        "failed": 0,
+        "slowestMs": 690
+      },
+      "console": {
+        "checks": 16,
+        "failed": 0,
+        "slowestMs": 1352
+      },
+      "app": {
+        "checks": 36,
+        "failed": 0,
+        "slowestMs": 723
+      }
+    },
+    "2026-11-15": {
+      "api": {
+        "checks": 34,
+        "failed": 0,
+        "slowestMs": 656
+      },
+      "website": {
+        "checks": 34,
+        "failed": 0,
+        "slowestMs": 778
+      },
+      "app": {
+        "checks": 34,
+        "failed": 0,
+        "slowestMs": 629
+      }
+    },
+    "2026-11-16": {
+      "api": {
+        "checks": 19,
+        "failed": 0,
+        "slowestMs": 596
+      },
+      "website": {
+        "checks": 19,
+        "failed": 0,
+        "slowestMs": 740
+      },
+      "app": {
+        "checks": 19,
+        "failed": 0,
+        "slowestMs": 604
+      }
+    },
+    "2026-11-17": {
+      "api": {
+        "checks": 27,
+        "failed": 0,
+        "slowestMs": 567
+      },
+      "website": {
+        "checks": 27,
+        "failed": 0,
+        "slowestMs": 751
+      },
+      "app": {
+        "checks": 27,
+        "failed": 0,
+        "slowestMs": 590
+      }
+    },
+    "2026-11-18": {
+      "api": {
+        "checks": 26,
+        "failed": 0,
+        "slowestMs": 562
+      },
+      "website": {
+        "checks": 26,
+        "failed": 0,
+        "slowestMs": 695
+      },
+      "app": {
+        "checks": 26,
+        "failed": 0,
+        "slowestMs": 599
+      }
+    },
+    "2026-11-19": {
+      "api": {
+        "checks": 26,
+        "failed": 0,
+        "slowestMs": 570
+      },
+      "website": {
+        "checks": 26,
+        "failed": 0,
+        "slowestMs": 731
+      },
+      "app": {
+        "checks": 26,
+        "failed": 0,
+        "slowestMs": 571
+      }
+    },
+    "2026-11-20": {
+      "api": {
+        "checks": 26,
+        "failed": 0,
+        "slowestMs": 561
+      },
+      "website": {
+        "checks": 26,
+        "failed": 0,
+        "slowestMs": 1362
+      },
+      "app": {
+        "checks": 26,
+        "failed": 0,
+        "slowestMs": 559
+      }
+    },
+    "2026-11-21": {
+      "api": {
+        "checks": 32,
+        "failed": 0,
+        "slowestMs": 512
+      },
+      "website": {
+        "checks": 32,
+        "failed": 0,
+        "slowestMs": 647
+      },
+      "app": {
+        "checks": 32,
+        "failed": 0,
+        "slowestMs": 553
+      }
+    },
+    "2026-11-22": {
+      "api": {
+        "checks": 30,
+        "failed": 0,
+        "slowestMs": 543
+      },
+      "website": {
+        "checks": 30,
+        "failed": 0,
+        "slowestMs": 750
+      },
+      "app": {
+        "checks": 30,
+        "failed": 0,
+        "slowestMs": 576
+      }
+    },
+    "2026-11-23": {
+      "api": {
+        "checks": 24,
+        "failed": 0,
+        "slowestMs": 530
+      },
+      "website": {
+        "checks": 24,
+        "failed": 0,
+        "slowestMs": 1473
+      },
+      "app": {
+        "checks": 24,
+        "failed": 0,
+        "slowestMs": 455
+      }
+    },
+    "2026-11-24": {
+      "api": {
+        "checks": 25,
+        "failed": 0,
+        "slowestMs": 548
+      },
+      "website": {
+        "checks": 25,
+        "failed": 0,
+        "slowestMs": 660
+      },
+      "app": {
+        "checks": 25,
+        "failed": 0,
+        "slowestMs": 519
+      }
+    },
+    "2026-11-25": {
+      "api": {
+        "checks": 24,
+        "failed": 0,
+        "slowestMs": 606
+      },
+      "website": {
+        "checks": 24,
+        "failed": 0,
+        "slowestMs": 1483
+      },
+      "app": {
+        "checks": 24,
+        "failed": 0,
+        "slowestMs": 583
+      }
+    },
+    "2026-11-26": {
+      "api": {
+        "checks": 25,
+        "failed": 0,
+        "slowestMs": 580
+      },
+      "website": {
+        "checks": 25,
+        "failed": 0,
+        "slowestMs": 1346
+      },
+      "app": {
+        "checks": 25,
+        "failed": 0,
+        "slowestMs": 588
+      }
+    },
+    "2026-11-27": {
+      "api": {
+        "checks": 25,
+        "failed": 0,
+        "slowestMs": 531
+      },
+      "website": {
+        "checks": 25,
+        "failed": 0,
+        "slowestMs": 1248
+      },
+      "app": {
+        "checks": 25,
+        "failed": 0,
+        "slowestMs": 581
+      }
+    },
+    "2026-11-28": {
+      "api": {
+        "checks": 23,
+        "failed": 0,
+        "slowestMs": 689
+      },
+      "website": {
+        "checks": 23,
+        "failed": 0,
+        "slowestMs": 769
+      },
+      "app": {
+        "checks": 23,
+        "failed": 0,
+        "slowestMs": 613
+      }
+    }
+  },
+  "keepDays": 90,
+  "services": [
+    {
+      "id": "api",
+      "name": "Inferra API"
+    },
+    {
+      "id": "website",
+      "name": "Website, documentation and console"
+    },
+    {
+      "id": "app",
+      "name": "Venndann app"
+    }
+  ]
+}
